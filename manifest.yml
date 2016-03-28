@@ -1,0 +1,18 @@
+---
+applications:
+- name: mysql-java-login
+  mem: 512M
+  path: build/mysql-java-login-1.0
+  services:
+    ${name}-db:
+      type: mysql
+  env:
+    http_proxy: http://192.168.101.10:3128
+    https_proxy: https://192.168.101.10:3128
+  helion:
+    cron:
+      - 0-59 * * * * /bin/date >> echo.log ; /bin/echo ECHOTEST >> echo.log
+      - 0-59 * * * * /usr/sbin/logrotate -fv --state logrotate-state app-logrotate.conf 1>>lotate.log 2>>lotate.log
+
+    env:
+      HELION_CRON_INSTANCES: all

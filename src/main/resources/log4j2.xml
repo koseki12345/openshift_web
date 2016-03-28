@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+
+<configuration>
+	<appenders>
+		<Console name="console">
+			<PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss.SSS} %-5level [%t] : %msg%n"/>
+		</Console>
+		<File name="fileAppender" fileName="/home/stackato/logs/myapp.log">
+			<PatternLayout>
+				<pattern>%d{YYYY-MM-dd HH:mm:ss.SSS} %-5level [%t] : %msg%n</pattern>
+			</PatternLayout>
+		</File>
+	</appenders>
+	<loggers>
+		<root level="debug">
+			<appender-ref ref="console" />
+			<appender-ref ref="fileAppender"/>
+		</root>
+	</loggers>
+</configuration>
