@@ -90,8 +90,8 @@
                 <version>2.3</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <outputDirectory>target</outputDirectory>
-              		  <warName>ROOT</warName>
+                    <outputDirectory>build</outputDirectory>
+              		  <warName>mysql-java-login-1.0</warName>
                 </configuration>
             </plugin>
         </plugins>
