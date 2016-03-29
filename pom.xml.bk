@@ -92,7 +92,7 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
-              	    <warName>mysql-java-login-1.0</warName>
+              	    <warName>ROOT</warName>
                 </configuration>
             </plugin>
         </plugins>
