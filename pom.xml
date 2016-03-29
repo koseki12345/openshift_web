@@ -8,7 +8,7 @@
     <version>1.0</version>
     <name>SampleApp</name>
 
-<!--	<build>
+	<build>
 		<directory>build</directory>
 		<outputDirectory>build\classes</outputDirectory>
 		<plugins>
@@ -30,7 +30,7 @@
 			</plugin>
 		</plugins>
 	</build>
--->
+
 	<dependencies>
 
 		<dependency>
