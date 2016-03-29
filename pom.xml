@@ -2,11 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.nec.samples</groupId>
-	<artifactId>mysql-java-login</artifactId>
-	<version>1.0</version>
-	<packaging>war</packaging>
-        <name>com.nec.samples</name>
+    <groupId>SampleApp</groupId>
+    <artifactId>SampleApp</artifactId>
+    <packaging>war</packaging>
+    <version>1.0</version>
+    <name>SampleApp</name>
+
 <!--	<build>
 		<directory>build</directory>
 		<outputDirectory>build\classes</outputDirectory>
@@ -82,15 +83,15 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <!--finalName>com.nec.samples</finalName-->
+<finalName>SampleApp</finalName>
         <plugins>
           <plugin>
-                <!--groupId>org.apache.maven.plugins</groupId-->
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <outputDirectory>build</outputDirectory>
+                    <outputDirectory>target</outputDirectory>
               	    <warName>ROOT</warName>
                 </configuration>
             </plugin>
