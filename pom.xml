@@ -82,7 +82,7 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <finalName>com.nec.samples</finalName>
+        <!--finalName>com.nec.samples</finalName-->
         <plugins>
           <plugin>
                 <!--groupId>org.apache.maven.plugins</groupId-->
@@ -91,7 +91,7 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>build</outputDirectory>
-              		  <warName>mysql-java-login-1.0</warName>
+              	    <warName>ROOT</warName>
                 </configuration>
             </plugin>
         </plugins>
